@@ -29,6 +29,7 @@ async function displayPopularMovies() {
    src="./images/no-image.jpg"
    class="card-img-top"
    alt="${movie.title}"
+   loading="lazy"
  />`
    }
 
@@ -62,6 +63,7 @@ async function displayPopularShows() {
      src="./images/no-image.jpg"
      class="card-img-top"
      alt="${show.name}"
+     loading="lazy"
    />`
      }
   
@@ -100,6 +102,7 @@ async function displayMovieDetails() {
           src="./images/no-image.jpg"
           class="card-img-top"
           alt="${movie.title}"
+          loading="lazy"
         />`
           }
           </div>
@@ -170,6 +173,7 @@ async function displayShowDetails() {
             src="./images/no-image.jpg"
             class="card-img-top"
             alt="${show.name}"
+            loading="lazy"
           />`
             }
             </div>
@@ -302,6 +306,7 @@ function displaySearchResults(results) {
    src="./images/no-image.jpg"
    class="card-img-top"
    alt="${global.search.type === 'movie' ? result.title : result.name}"
+   loading="lazy"
  />`
    }
 
@@ -347,6 +352,7 @@ async function displaySlider() {
     <img
       src="https://image.tmdb.org/t/p/w500${movie.poster_path}"
       alt="${movie.title}"
+      loading="lazy"
     />
   </a>
   <h4 class="swiper-rating">
